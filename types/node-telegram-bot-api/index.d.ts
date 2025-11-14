@@ -92,6 +92,115 @@ declare namespace TelegramBot {
 
     type ParseMode = "Markdown" | "MarkdownV2" | "HTML";
 
+    interface LinkPreviewOptions {
+        is_disabled?: boolean;
+        url?: string;
+        prefer_small_media?: boolean;
+        prefer_large_media?: boolean;
+        show_above_text?: boolean;
+    }
+
+    type ReactionType = ReactionTypeEmoji | ReactionTypeCustomEmoji;
+
+    interface AbstractReactionType {
+        type: string;
+    }
+
+    type TelegramEmoji =
+        | "👍"
+        | "👎"
+        | "❤"
+        | "🔥"
+        | "🥰"
+        | "👏"
+        | "😁"
+        | "🤔"
+        | "🤯"
+        | "😱"
+        | "🤬"
+        | "😢"
+        | "🎉"
+        | "🤩"
+        | "🤮"
+        | "💩"
+        | "🙏"
+        | "👌"
+        | "🕊"
+        | "🤡"
+        | "🥱"
+        | "🥴"
+        | "😍"
+        | "🐳"
+        | "❤‍🔥"
+        | "🌚"
+        | "🌭"
+        | "💯"
+        | "🤣"
+        | "⚡"
+        | "🍌"
+        | "🏆"
+        | "💔"
+        | "🤨"
+        | "😐"
+        | "🍓"
+        | "🍾"
+        | "💋"
+        | "🖕"
+        | "😈"
+        | "😴"
+        | "😭"
+        | "🤓"
+        | "👻"
+        | "👨‍💻"
+        | "👀"
+        | "🎃"
+        | "🙈"
+        | "😇"
+        | "😨"
+        | "🤝"
+        | "✍"
+        | "🤗"
+        | "🫡"
+        | "🎅"
+        | "🎄"
+        | "☃"
+        | "💅"
+        | "🤪"
+        | "🗿"
+        | "🆒"
+        | "💘"
+        | "🙉"
+        | "🦄"
+        | "😘"
+        | "💊"
+        | "🙊"
+        | "😎"
+        | "👾"
+        | "🤷‍♂"
+        | "🤷"
+        | "🤷‍♀"
+        | "😡";
+
+    interface ReactionTypeEmoji extends AbstractReactionType {
+        type: "emoji";
+        emoji: TelegramEmoji;
+    }
+
+    interface ReactionTypeCustomEmoji extends AbstractReactionType {
+        type: "custom_emoji";
+        custom_emoji_id: string;
+    }
+
+    interface ReplyParameters {
+        message_id: number;
+        chat_id?: ChatId;
+        allow_sending_without_reply?: boolean;
+        quote?: string;
+        quote_parse_mode?: ParseMode;
+        quote_entities?: MessageEntity[];
+        quote_position?: number;
+    }
+
     /// METHODS OPTIONS ///
     interface PollingOptions {
         interval?: string | number | undefined;
@@ -150,7 +259,9 @@ declare namespace TelegramBot {
         reply_to_message_id?: number | undefined;
         reply_markup?: InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply | undefined;
         protect_content?: boolean | undefined;
+        reply_parameters?: ReplyParameters;
         allow_sending_without_reply?: boolean | undefined;
+        link_preview_options?: LinkPreviewOptions;
     }
 
     interface SendMessageOptions extends SendBasicOptions {
@@ -305,6 +416,9 @@ declare namespace TelegramBot {
     }
 
     interface CreateInvoiceLinkOptions {
+        subscription_period?: number | undefined;
+        max_tip_amount?: number | undefined;
+        suggested_tip_amounts?: number[] | undefined;
         provider_data?: string | undefined;
         photo_url?: string | undefined;
         photo_size?: number | undefined;
@@ -814,6 +928,8 @@ declare namespace TelegramBot {
         login_url?: LoginUrl | undefined;
         switch_inline_query?: string | undefined;
         switch_inline_query_current_chat?: string | undefined;
+        switch_inline_query_chosen_chat?: SwitchInlineQueryChosenChat | undefined;
+        copy_text?: CopyTextButton | undefined;
         callback_game?: CallbackGame | undefined;
         pay?: boolean | undefined;
     }
@@ -823,6 +939,18 @@ declare namespace TelegramBot {
         forward_text?: string | undefined;
         bot_username?: string | undefined;
         request_write_access?: boolean | undefined;
+    }
+
+    interface SwitchInlineQueryChosenChat {
+        query: string;
+        allow_user_chats?: boolean | undefined;
+        allow_bot_chats?: boolean | undefined;
+        allow_group_chats?: boolean | undefined;
+        allow_channel_chats?: boolean | undefined;
+    }
+
+    interface CopyTextButton {
+        text: string;
     }
 
     interface CallbackQuery {
@@ -843,17 +971,23 @@ declare namespace TelegramBot {
 
     interface ChatPhoto {
         small_file_id: string;
+        small_file_unique_id: string;
         big_file_id: string;
+        big_file_unique_id: string;
     }
 
     interface ChatInviteLink {
         invite_link: string;
         creator: User;
+        creates_join_request: boolean;
         is_primary: boolean;
         is_revoked: boolean;
-        expire_date?: number;
-        member_limit?: number;
-        name?: string;
+        name?: string | undefined;
+        expire_date?: number | undefined;
+        member_limit?: number | undefined;
+        pending_join_request_count?: number | undefined;
+        subscription_period?: number | undefined;
+        subscription_prices?: number | undefined;
     }
 
     interface ChatMember {
@@ -884,6 +1018,8 @@ declare namespace TelegramBot {
         old_chat_member: ChatMember;
         new_chat_member: ChatMember;
         invite_link?: ChatInviteLink;
+        via_join_request?: boolean | undefined;
+        via_chat_folder_invite_link?: boolean | undefined;
     }
 
     type ChatPermissionsNames =
@@ -1421,10 +1557,14 @@ declare namespace TelegramBot {
         can_promote_members: boolean;
         can_change_info: boolean;
         can_invite_users: boolean;
+        can_post_stories: boolean;
+        can_edit_stories: boolean;
+        can_delete_stories: boolean;
         can_post_messages?: boolean;
         can_edit_messages?: boolean;
         can_pin_messages?: boolean;
         can_manage_topics?: boolean;
+        can_manage_direct_messages?: boolean;
     }
 
     interface SentWebAppMessage {
@@ -1726,6 +1866,15 @@ declare class TelegramBot extends TelegramBotEventEmitter<TelegramBot.TelegramEv
         chatId: TelegramBot.ChatId,
         action: TelegramBot.ChatAction,
         options?: TelegramBot.SendChatActionOptions,
+    ): Promise<boolean>;
+
+    setMessageReaction(
+        chatId: TelegramBot.ChatId,
+        messageId: number,
+        form: {
+            reaction?: TelegramBot.ReactionType[];
+            is_big?: boolean;
+        },
     ): Promise<boolean>;
 
     banChatMember(

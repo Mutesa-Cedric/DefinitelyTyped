@@ -66,6 +66,7 @@ run({
     lineCoverage: 70,
     branchCoverage: 50,
     functionCoverage: 80,
+    rerunFailuresFilePath: "/path/to/file.json",
 });
 
 // TestsStream should be a NodeJS.ReadableStream
@@ -163,6 +164,8 @@ test(undefined, undefined, t => {
     t.signal;
     // $ExpectType MockTracker
     t.mock;
+    // $ExpectType number
+    t.attempt;
 });
 
 // Test the subtest approach.
@@ -810,6 +813,26 @@ test("mocks a module", (t) => {
     mock.restore();
 });
 
+test("mocks a property", (t) => {
+    const object = { foo: "bar" };
+    const mockedObject = t.mock.property(object, "foo");
+    // $ExpectType string
+    mockedObject.foo;
+
+    mockedObject.mock.mockImplementation("baz");
+    mockedObject.mock.mockImplementationOnce("bash", 5);
+
+    // $ExpectType number
+    mockedObject.mock.accessCount();
+
+    const access = mockedObject.mock.accesses[0];
+    // $ExpectType string
+    access.value;
+
+    mockedObject.mock.resetAccesses();
+    mockedObject.mock.restore();
+});
+
 // @ts-expect-error
 dot();
 // $ExpectType AsyncGenerator<"\n" | "." | "X", void, unknown> || AsyncGenerator<"\n" | "." | "X", void, any>
@@ -1009,7 +1032,7 @@ const invalidSuiteContext = new SuiteContext();
 test("check all assertion functions are re-exported", t => {
     type AssertModuleExports = keyof typeof import("assert");
     const keys: keyof { [K in keyof typeof t.assert as K extends AssertModuleExports ? K : never]: any } =
-        {} as Exclude<AssertModuleExports, "AssertionError" | "CallTracker" | "strict">;
+        {} as Exclude<AssertModuleExports, "Assert" | "AssertionError" | "CallTracker" | "strict">;
 });
 
 test("planning with streams", (t: TestContext, done) => {

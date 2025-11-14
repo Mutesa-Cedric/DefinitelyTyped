@@ -167,6 +167,7 @@
 /types/amqp/                                            @seikho @jonnysparkplugs
 /types/amqp-rpc/                                        @wokim
 /types/amqplib/                                         @mnahkies @abreits @nfantone @nickzelei @XVincentX @seonggwonyoon
+/types/amzn__synthetics-playwright/                     @kovacsandor
 /types/analog-clock/                                    @ihatecsv
 /types/analytics-node/                                  @fongandrew @thomasthiebaud
 /types/anchor-js/                                       @xt0rted
@@ -270,7 +271,7 @@
 /types/apidoc/                                          @rigwild @hoonga @NicolasCARPi
 /types/apigee-access/                                   @CasperSkydt
 /types/apimocker/                                       @uchilaka
-/types/apollo-upload-client/                            @Slessi @tyankatsu0105
+/types/apollo-upload-client/                            @tyankatsu0105
 /types/apostrophe/                                      @afholderman
 /types/app-module-path/                                 @darkwebdev
 /types/appcache-webpack-plugin/                         @peterblazejewicz
@@ -279,6 +280,7 @@
 /types/append-query/                                    @ffflorian
 /types/appframework/                                    @kyo-ago
 /types/appgeist__ensure-dir/                            @ChocolateLoverRaj
+/types/apple-mapkit/                                    @timdream @n1kk
 /types/apple-mapkit-js-browser/                         @kilghaz @wsmd @chrisdrackett @moritzsternemann @vinayakkulkarni
 /types/apple-music-api/                                 @nchase @useffc
 /types/apple-signin-api/                                @voidpumpkin @koenpunt
@@ -302,7 +304,6 @@
 /types/are.na/                                          @huntercaron
 /types/argon2-browser/                                  @ivangabriele @mymindstorm @jdforsythe
 /types/argparse/                                        @arcticwaters @tlaziuk @eps1lon @cakoose @ondkloss @doberkofler
-/types/args/                                            @Slessi
 /types/argv/                                            @hookclaw
 /types/ari-client/                                      @dioris-moreno
 /types/aria-query/                                      @eps1lon
@@ -310,7 +311,6 @@
 /types/arr-union/                                       @mrmlnc
 /types/array-binarysearch.closest/                      @hvoecking
 /types/array-bounds/                                    @BendingBender
-/types/array-equal/                                     @MysteryBlokHed
 /types/array-find-index/                                @samverschueren
 /types/array-foreach/                                   @skysteve
 /types/array-initial/                                   @Richienb
@@ -437,13 +437,11 @@
 /types/babel-code-frame/                                @mohsen1
 /types/babel-core/                                      @yortus @marvinhagemeister
 /types/babel-generator/                                 @yortus
-/types/babel-plugin-glaze/                              @kripod
 /types/babel-plugin-macros/                             @billykwok @coffee-cup @ifiokjr
 /types/babel-plugin-react-docgen/                       @forivall
 /types/babel-plugin-react-html-attrs/                   @insin
 /types/babel-plugin-react-pug/                          @jpap
 /types/babel-plugin-syntax-jsx/                         @marvinhagemeister
-/types/babel-plugin-tester/                             @ifiokjr @mathieutu
 /types/babel-template/                                  @yortus @marvinhagemeister
 /types/babel-traverse/                                  @yortus @marvinhagemeister @rpetrich
 /types/babel-types/                                     @yortus @baxtersa @marvinhagemeister @bcherny @ExE-Boss
@@ -554,7 +552,6 @@
 /types/bin-pack/                                        @orentrutner
 /types/binary-file/                                     @Goldsmith42
 /types/binary-parse-stream/                             @ffflorian
-/types/binary-parser/                                   @riggs @dolanmiu @yuhr @caguiclajmg
 /types/binary-split/                                    @krisztianb
 /types/binary-xml/                                      @atlowChemi
 /types/bind-args/                                       @ChocolateLoverRaj
@@ -681,7 +678,6 @@
 /types/browserify/                                      @AndrewGaspar @jvilk @leonard-thieu @LinusU
 /types/browserify-cipher/                               @aseyfpour
 /types/browserslist-useragent/                          @nju33
-/types/bs58check/                                       @muturgan
 /types/bs58grscheck/                                    @gruve-p
 /types/bser/                                            @claasahl
 /types/btoa/                                            @johngeorgewright @bricka
@@ -704,6 +700,7 @@
 /types/bufferstream/                                    @Bartvds
 /types/build-output-script/                             @BendingBender
 /types/bull-arena/                                      @levibostian @gtpan77
+/types/bullbone/                                        @leonbahley @TarasOP @malikalimoekhamedov
 /types/bumblebee-hotword/                               @sheunglaili
 /types/bump-regex/                                      @silkentrance
 /types/bun/                                             @Jarred-Sumner @robobun @dylan-conway @nektro @RiskyMH @alii
@@ -771,7 +768,6 @@
 /types/carbon__feature-flags/                           @metonym
 /types/carbon__layout/                                  @vpicone
 /types/carbon__motion/                                  @vpicone
-/types/carbon__pictograms-react/                        @metonym
 /types/carbon__themes/                                  @vpicone
 /types/carbon__type/                                    @vpicone
 /types/carbone/                                         @apatryda
@@ -785,6 +781,7 @@
 /types/castv2/                                          @thibauts @joeyparrish @juliandomingo @theodab
 /types/catbox/                                          @jasonswearingen @AJamesPhillips @saboya
 /types/catbox/v7/                                       @jasonswearingen @AJamesPhillips
+/types/catchpoint-playwright/                           @jabranr
 /types/caverphone/                                      @hu0529
 /types/cavy/                                            @tyler-hoffman @AbigailMcP
 /types/cbor-js/                                         @Longqin88888
@@ -867,7 +864,7 @@
 /types/chmodr/                                          @BendingBender
 /types/chosen-js/                                       @borisyankov @denisname
 /types/chownr/                                          @BendingBender
-/types/chroma-js/                                       @invliD @mpacholec @CharlieZhuo
+/types/chroma-js/                                       @invliD @CharlieZhuo
 /types/chroma-js/v0/                                    @invliD
 /types/chrome/                                          @matthewkimber @otiai10 @sreimer15 @MatCarlson @ekinsol @echoabstract @spasma @bdbai @JasonXian @usertim @idan315 @nicolas377 @idosal @fregante @erwanjugand
 /types/chrome-apps/                                     @niikoo @AdamLay @mzsm @RReverser @pyle @matthewkimber @otiai10 @rreverser @sreimer15
@@ -1076,7 +1073,6 @@
 /types/contentful-resolve-response/                     @antonkarsten
 /types/contextjs/                                       @kernhanda
 /types/continuation-local-storage/                      @rath @heycalmdown @skwee357
-/types/contract-proxy-kit/                              @cag
 /types/contrast-color/                                  @domdomegg
 /types/conventional-changelog/                          @JasonHK
 /types/conventional-changelog-config-spec/              @JasonHK
@@ -1173,6 +1169,7 @@
 /types/critters-webpack-plugin/                         @JuanJoseGonGi @peterblazejewicz
 /types/crocks/                                          @jakubbarczyk
 /types/cronitor/                                        @alexpresthus
+/types/cronofy-elements/                                @agarciabz
 /types/croppie/                                         @connor4312 @dklmuc @sarunint @knuthelgesen
 /types/cross-domain-utils/                              @ANovokmet
 /types/cross-spawn/                                     @Alorel @ExE-Boss
@@ -1238,7 +1235,6 @@
 /types/cypress-image-snapshot/                          @Keysox
 /types/cypress__code-coverage/                          @k-yle
 /types/cyrb53/                                          @igrek8
-/types/cytoscape/                                       @phreed @ypconstante @janniclas @gsbelarus @peterjferrarotto @spaxe @Veckodag @jsve
 /types/cytoscape-avsdf/                                 @rogerdubbs
 /types/cytoscape-canvas/                                @hellomusa
 /types/cytoscape-context-menus/                         @hellomusa
@@ -1250,7 +1246,6 @@
 /types/cytoscape-fcose/                                 @Phpaulsen
 /types/cytoscape-klay/                                  @rogerdubbs
 /types/cytoscape-navigator/                             @hellomusa
-/types/cytoscape-popper/                                @DieserFelix
 /types/d/                                               @BendingBender
 /types/d20/                                             @pipboy3000
 /types/d3/                                              @tomwanzek @gustavderdrache @borisyankov @denisname @Methuselah96 @Fil
@@ -1492,7 +1487,6 @@
 /types/dexie-batch/                                     @ffflorian
 /types/df-visible/                                      @Litee
 /types/dhtmlxgantt/                                     @mkozhukh @chriscamicas
-/types/dhtmlxscheduler/                                 @mkozhukh
 /types/di/                                              @johnjbarton
 /types/di-lite/                                         @dcrusader
 /types/diacritics/                                      @otociulis
@@ -1605,8 +1599,8 @@
 /types/dplayer/                                         @Guanyunhan
 /types/draco3d/                                         @donmccurdy @horizon0514
 /types/draco3dgltf/                                     @donmccurdy
-/types/draft-convert/                                   @avaleriani @MunifTanjim @vadim-ch
-/types/draft-js/                                        @dmitryrogozhny @eelco @ghotiphud @schwers @michael-yx-wu @willisplummer @smvilar @sulf @pablopunk @claudiopro @khawkinson @MunifTanjim @PeterDekkers @ankitr
+/types/draft-convert/                                   @avaleriani @vadim-ch
+/types/draft-js/                                        @dmitryrogozhny @eelco @ghotiphud @schwers @michael-yx-wu @willisplummer @smvilar @sulf @pablopunk @claudiopro @khawkinson @PeterDekkers @ankitr
 /types/draftjs-to-html/                                 @1cheese
 /types/drag-controls/                                   @MGHawes
 /types/drag-timetable/                                  @chinkan
@@ -1720,6 +1714,7 @@
 /types/email-reply-parser/                              @MelonCode
 /types/email-templates/                                 @cyrilschumacher @gurisko @blankstar85 @vesse @qqilihq @peterblazejewicz @ksewo
 /types/emailjs-mime-codec/                              @nicu-chiciuc
+/types/emailjs-utf7/                                    @cyberbobs
 /types/emartech__cls-adapter/                           @lexwebb
 /types/ember/                                           @jamescdavis @wagenet @gitKrystan
 /types/ember/v2/                                        @gitKrystan @jamescdavis @wagenet
@@ -1794,7 +1789,7 @@
 /types/empower/                                         @vvakame
 /types/empower-core/                                    @jirutka
 /types/empty-dir/                                       @BendingBender @djcsdy
-/types/emscripten/                                      @zakki @periklis @kbumsik @lourd
+/types/emscripten/                                      @zakki @periklis @kbumsik @lourd @ptprashanttripathi
 /types/enamdict/                                        @peterblazejewicz
 /types/encodeurl/                                       @BendingBender @bjohansebas
 /types/encoding-down/                                   @MeirionHughes @danwbyrne
@@ -1833,7 +1828,6 @@
 /types/errorhandler/                                    @santialbo @peterblazejewicz
 /types/es-abstract/                                     @ljharb @ExE-Boss
 /types/es-aggregate-error/                              @AverageHelper
-/types/es-feature-detection/                            @Jack-Works
 /types/es-get-iterator/                                 @JasonHK @ljharb
 /types/es6-collections/                                 @rbuckton
 /types/es6-promisify/                                   @bschlenk
@@ -1921,7 +1915,7 @@
 /types/exit/                                            @Bartvds
 /types/exorcist/                                        @TeamworkGuy2 @BendingBender
 /types/expand-tilde/                                    @carnesen
-/types/expect-cookies/                                  @dmurvihill
+/types/expect-cookies/                                  @dmurvihill @gregl83
 /types/expect-puppeteer/                                @tkrotoff @jfm710
 /types/expect.js/                                       @teppeis
 /types/expectations/                                    @vvakame
@@ -1945,6 +1939,7 @@
 /types/express-cache-response-directive/                @yutak23
 /types/express-cluster/                                 @nenadalm
 /types/express-conditional-middleware/                  @tpluscode
+/types/express-correlation-id/                          @greenrenge
 /types/express-debug/                                   @federicobond
 /types/express-delay-header/                            @peterblazejewicz
 /types/express-domain-middleware/                       @hookclaw
@@ -2005,7 +2000,7 @@
 /types/extjs/                                           @brian428
 /types/extra-watch-webpack-plugin/                      @davecardwell
 /types/extract-domain/                                  @peterblazejewicz
-/types/extract-files/                                   @Slessi @lynxtaa
+/types/extract-files/                                   @lynxtaa
 /types/extract-text-webpack-plugin/                     @flying-sheep @katyo
 /types/eyes/                                            @brynbellomy
 /types/eyevinn-iaf/                                     @birme @oscnord
@@ -2016,7 +2011,7 @@
 /types/facebook-instant-games/                          @menushka @oyvindjam @doterax
 /types/facebook-js-sdk/                                 @amritk @mahmoudzohdi @fluidsonic @bengry
 /types/facebook-locales/                                @CvX
-/types/facebook-nodejs-business-sdk/                    @aisel01 @rodinhatokay
+/types/facebook-nodejs-business-sdk/                    @aisel01 @rodinhatokay @liorf-wix
 /types/facebook-pixel/                                  @noctishsu @VictorHom @ninpeng
 /types/facepaint/                                       @DogPawHat @antonsamper @timswalling
 /types/factory-girl/                                    @stackbuilders @sestrella @elcuy @OlivierKamers @DMcNamara
@@ -2143,7 +2138,7 @@
 /types/fitbit-weather/                                  @JeremyJeanson
 /types/fitfont/                                         @JeremyJeanson
 /types/fitvids/                                         @peterblazejewicz
-/types/fixed-data-table/                                @pepaar @stephenjelfs
+/types/fixed-data-table/                                @pepaar
 /types/flagged-respawn/                                 @BendingBender
 /types/flashpoint-launcher/                             @colin969
 /types/flat/                                            @chrootsu @thewizarodofoz
@@ -2760,6 +2755,7 @@
 /types/gaugejs/                                         @BTOdell
 /types/gaussian/                                        @scttcper
 /types/gaussian-elimination/                            @codecosm
+/types/gaze/                                            @k-yle
 /types/gbk.js/                                          @mkchung
 /types/gc-profiler/                                     @BendingBender
 /types/gc-stats/                                        @vfernandestoptal
@@ -2823,6 +2819,7 @@
 /types/gifencoder/                                      @cprecioso @almeidx
 /types/gifsicle/                                        @almeidx
 /types/gijgo/                                           @atatanasov
+/types/gimloader/                                       @TheLazySquid @RiptideAtlantic
 /types/giphy-api/                                       @screendriver
 /types/giraffe/                                         @jgonggrijp
 /types/git/                                             @vvakame
@@ -2926,7 +2923,7 @@
 /types/gopd/                                            @ljharb
 /types/gorilla-engine/                                  @jhwoodward @UJAM-JH @rip-off-hb @pkellett @vpietropaolo-ujam @agachuma
 /types/got-resume/                                      @inglec-arista @BendingBender
-/types/govuk-frontend/                                  @colinrotherham @romaricpascal
+/types/govuk-frontend/                                  @colinrotherham @paulrobertlloyd @romaricpascal
 /types/graceful-fs/                                     @Bartvds @BendingBender
 /types/gradient-parser/                                 @AviVahl
 /types/graham_scan/                                     @hberntsen
@@ -2976,7 +2973,7 @@
 /types/gtag.js/                                         @rokt33r @KsAkira10
 /types/gtmetrix/                                        @peterblazejewicz
 /types/guacamole-client/                                @KonstantinSimeonov @vakrilov @PetarMetodiev
-/types/guacamole-common-js/                             @KonstantinSimeonov @vakrilov @PetarMetodiev @Talent30 @linn-gith
+/types/guacamole-common-js/                             @KonstantinSimeonov @vakrilov @PetarMetodiev @linn-gith
 /types/guid/                                            @maroy1986
 /types/gulp/                                            @GiedriusGrabauskas @pulsovi
 /types/gulp-angular-protractor/                         @akwiatek
@@ -3135,6 +3132,7 @@
 /types/has-values/                                      @Ankan002
 /types/hasbin/                                          @michastreppel
 /types/hash-chain/                                      @BendingBender
+/types/hash-code/                                       @dunal
 /types/hash-file/                                       @HiromiShikata
 /types/hash-stream/                                     @BendingBender
 /types/hash-sum/                                        @DanielRosenwasser
@@ -3156,6 +3154,7 @@
 /types/he/                                              @sedwards2009 @lokidokicoki
 /types/headroom/                                        @hakubo @juninhocruzg3
 /types/headroom.js/                                     @hakubo @juninhocruzg3 @peterblazejewicz @manoldonev
+/types/heap/                                            @MysteryBlokHed
 /types/heapdump/                                        @weekens
 /types/heatmap.js/                                      @lookuptable @rhys-vdw
 /types/heft-jest/                                       @octogonz @iclanton
@@ -3221,6 +3220,7 @@
 /types/html-escaper/                                    @panManfredini
 /types/html-minifier/                                   @tkrotoff @peterblazejewicz
 /types/html-minifier/v1/                                @tkrotoff
+/types/html-minifier-next/                              @orpheus6678
 /types/html-minifier-terser/                            @peterblazejewicz
 /types/html-parser/                                     @maxbogus
 /types/html-pdf/                                        @westy92
@@ -3236,6 +3236,7 @@
 /types/html-webpack-plugin/                             @deevus @bumbleblym @tlaziuk
 /types/html-webpack-template/                           @bumbleblym
 /types/html2json/                                       @YEK-PLUS
+/types/html2pdf.js/                                     @Mutesa-Cedric
 /types/html4-id/                                        @peterblazejewicz
 /types/html5-history/                                   @akashishu777
 /types/html5-to-pdf/                                    @samalexander
@@ -3337,7 +3338,6 @@
 /types/imagesloaded/                                    @apexskier
 /types/imap/                                            @psnider
 /types/imap-simple/                                     @pushplay @iaarnio
-/types/imapflow/                                        @jeffreyratton98 @martin-badin @grayson-code @remscar
 /types/img-clipboard/                                   @Nigecat
 /types/imgur-rest-api/                                  @lukewestby
 /types/immediate/                                       @BendingBender
@@ -3410,7 +3410,7 @@
 /types/intro.js/                                        @anahkiasen @LeonMontealegre @vkrol
 /types/invariant/                                       @bennett000 @dtinth @turadg
 /types/inversify-devtools/                              @inversify
-/types/invity-api/                                      @martinboehm @LukasRada
+/types/invity-api/                                      @FreeWall @tomasklim @vytick
 /types/ion-rangeslider/                                 @Karel-van-de-Plassche
 /types/ion-rangeslider/v1/                              @dduugg @Karel-van-de-Plassche
 /types/iopipe__iopipe/                                  @javonharper
@@ -3419,7 +3419,6 @@
 /types/iota.lib.js/                                     @fogsh
 /types/ip/                                              @codeanimal @BendingBender
 /types/ip-packet/                                       @BendingBender
-/types/ip-subnet-calculator/                            @dahool
 /types/ip-to-int/                                       @yutak23
 /types/ip1sms__is-disposable-phone-number/              @ziishaned
 /types/ip6addr/                                         @slaweet
@@ -3544,7 +3543,7 @@
 /types/jalaali-js/                                      @alitaheri
 /types/japanese-characters/                             @peterblazejewicz
 /types/japanese-holidays/                               @syamatoo @peterblazejewicz
-/types/jasmine/                                         @borisyankov @theodorejb @davidparsson @lukas-zech-software @Engineer2B @cyungmann @Roaders @devoto13 @fdim @kolodny @stephenfarrar @djungowski @chivesrs @kirjs @Semigradsky
+/types/jasmine/                                         @borisyankov @theodorejb @lukas-zech-software @Engineer2B @cyungmann @Roaders @fdim @kolodny @stephenfarrar @djungowski @chivesrs @kirjs @Semigradsky
 /types/jasmine/v1/                                      @borisyankov
 /types/jasmine/v2/                                      @borisyankov @theodorejb @davidparsson @gmoothart @lukas-zech-software @Engineer2B @cyungmann @devoto13 @fdim
 /types/jasmine/v3/                                      @borisyankov @theodorejb @davidparsson @lukas-zech-software @Engineer2B @cyungmann @Roaders @devoto13 @fdim @kolodny @stephenfarrar @djungowski @chivesrs @kirjs @Semigradsky
@@ -3607,7 +3606,6 @@
 /types/josa/                                            @vichyssoise
 /types/jotform-css.js/                                  @pandawood
 /types/jp-conversion/                                   @NicolasNewman
-/types/jpeg-autorotate/                                 @Slessi
 /types/jpegtran-bin/                                    @hikoma
 /types/jqgrid/                                          @lokeshpeta
 /types/jqrangeslider/                                   @qcz
@@ -3683,7 +3681,7 @@
 /types/jquery.dropotron/                                @cyrilschumacher
 /types/jquery.dynatree/                                 @fdecampredon
 /types/jquery.elang/                                    @sumegizoltan
-/types/jquery.fancytree/                                @alphaleonis @abedio @niikoo @Nitecube @hosni
+/types/jquery.fancytree/                                @alphaleonis @itsmattius @niikoo @Nitecube @hosni
 /types/jquery.fileupload/                               @rob-alarcon
 /types/jquery.filtertable/                              @totpero
 /types/jquery.finger/                                   @maxackley
@@ -3920,7 +3918,7 @@
 /types/jwt-then/                                        @phenomax
 /types/jxon/                                            @maxbogus
 /types/k-bucket/                                        @tomonari-t
-/types/k6/                                              @MStoykov @codebien @oleiade @ankur22 @inancgumus @joanlopez
+/types/k6/                                              @MStoykov @codebien @oleiade @ankur22 @inancgumus @joanlopez @AgnesToulet
 /types/kafka-node-avro/                                 @alfamegaxq
 /types/kafkajs-snappy/                                  @matteodisabatino
 /types/kahoot.js-updated/                               @MysteryBlokHed
@@ -4119,6 +4117,7 @@
 /types/langs/                                           @orgads
 /types/language-tags/                                   @remcohaszing
 /types/lapo__asn1js/                                    @MysteryBlokHed
+/types/laravel-js-str/                                  @abetwothree
 /types/laravel-vapor/                                   @saibotk
 /types/lasso/                                           @darkwebdev
 /types/last-element/                                    @ChocolateLoverRaj
@@ -4224,7 +4223,6 @@
 /types/lexicographic-integer/                           @me
 /types/lfsr/                                            @mildsunrise
 /types/lgtv2/                                           @ovidiupruteanu
-/types/libarchive.js/                                   @finesunes
 /types/libhoney/                                        @dcposch
 /types/libmime/                                         @bendingbender
 /types/libnpmdiff/                                      @oBusk
@@ -4235,7 +4233,6 @@
 /types/librato-node/                                    @jgeurts
 /types/libsodium-wrappers/                              @ffflorian
 /types/libsodium-wrappers-sumo/                         @ffflorian
-/types/libxmljs/                                        @fdecampredon @ComFreek
 /types/libxslt/                                         @alejo90 @daniel-pedersen
 /types/license-checker/                                 @rogierschouten @unindented @alechemy
 /types/license-key-gen/                                 @abh80
@@ -4259,7 +4256,6 @@
 /types/linkify-it/                                      @praxxis @alexplumb @ragafus
 /types/linkify-markdown/                                @JamieMagee
 /types/linkifyjs/                                       @g-rath @szhu @ovidiubute
-/types/lint-staged/                                     @okonet @saiichihashimoto
 /types/list-git-remotes/                                @BendingBender
 /types/list-stream/                                     @IanStorm
 /types/list.js/                                         @jeffreymeng
@@ -4641,7 +4637,7 @@
 /types/lzbase62/                                        @ArthurKa
 /types/lzma/                                            @Goldsmith42
 /types/lzma-native/                                     @leshow
-/types/m3u8-parser/                                     @k-yle
+/types/m3u8-parser/                                     @k-yle @dyc3
 /types/macaca-circular-json/                            @jpevarnek
 /types/macrotask/                                       @BendingBender
 /types/madge/                                           @jasongerbes
@@ -4763,13 +4759,13 @@
 /types/mathjax/                                         @rolandzwaga
 /types/mathjax-node/                                    @nvlang
 /types/matomo-tracker-react-native/                     @zecergin
-/types/matter-js/                                       @piranha771 @hasparus @dwhinham @slikts @stevensnoeijen
+/types/matter-js/                                       @piranha771 @hasparus @slikts @stevensnoeijen
 /types/max-api/                                         @geofholbrook @fde31
 /types/maxmsp/                                          @twhiston @FrancescElies
 /types/mcping-js/                                       @Inrixia
 /types/mcrypt/                                          @pluma
 /types/mcustomscrollbar/                                @flurg
-/types/md5/                                             @arcdev1 @jprogrammer @peterblazejewicz @DethAriel
+/types/md5/                                             @arcdev1 @peterblazejewicz @DethAriel
 /types/mdast/                                           @ChristianMurphy @lujun2 @remcohaszing @wooorm @remcohaszing
 /types/mdast/v3/                                        @ChristianMurphy @lujun2 @remcohaszing @wooorm
 /types/mdns/                                            @reppners
@@ -4838,7 +4834,6 @@
 /types/mg-api-js/                                       @kadensharpin
 /types/micro-cors/                                      @CallumDenby @moonchanyong
 /types/micro-events/                                    @AlexanderSychev
-/types/microlight/                                      @ravenclaw900
 /types/micromatch/                                      @vemoo
 /types/micromatch/v2/                                   @glen-84
 /types/micromodal/                                      @wcarson
@@ -4853,6 +4848,7 @@
 /types/microsoftteams/                                  @WrathOfZombies @ydogandjiev @orty
 /types/microtime/                                       @vincekovacs
 /types/midi/                                            @mattsoulanille
+/types/midtrans-client/                                 @MystiaFin
 /types/migrate-mongo/                                   @amitbeck
 /types/millisecond/                                     @xeoneux
 /types/mime-db/                                         @AJamesPhillips @LinusU @peterblazejewicz @bjohansebas
@@ -4871,7 +4867,6 @@
 /types/minimatch-all/                                   @ChocolateLoverRaj
 /types/minimist/                                        @Bartvds @Necroskillz @kamranayub @peterblazejewicz
 /types/miniprogram/                                     @rockSandy @LynneXu @xdoer
-/types/miniprogram-wxs/                                 @NewFuture @wechat-miniprogram-admin
 /types/mirrorx/                                         @aaronphy
 /types/mithril/                                         @spacejack @dead-claudia
 /types/mithril-global/                                  @spacejack @dead-claudia
@@ -5053,6 +5048,7 @@
 /types/navermaps/                                       @ckboyjiy @DongKyuuuu @fclemonschool @suhwancha @hig4342 @kkokkojeong @gseok
 /types/navigator-languages-parser/                      @mlc
 /types/nbayes/                                          @BendingBender
+/types/ncalayer-js-client/                              @kennyromanov
 /types/ncom/                                            @DanielRose
 /types/nconf/                                           @jmthibault
 /types/ncp/                                             @bartvds @belemaire @ExE-Boss
@@ -5073,12 +5069,12 @@
 /types/nes/                                             @NoHomey @saboya
 /types/nestdb/                                          @alexanderson1993
 /types/nested-error-stacks/                             @woutervh-
+/types/net-snmp/                                        @0rierel
 /types/net-ticks/                                       @chriswiggins
 /types/netconf/                                         @leodinas-hao
 /types/netease-captcha/                                 @norubidium
 /types/netgear/                                         @k-yle
 /types/netlify-auth-providers/                          @drazisil
-/types/netlify-identity-widget/                         @nkprince007
 /types/netmask/                                         @mhfrantz @JanST123 @yoursunny
 /types/network-interfaces/                              @anderswestberg
 /types/neverbounce/                                     @georgenov
@@ -5140,7 +5136,6 @@
 /types/noble-mac/                                       @swook @shantanubhadoria @lukel99 @bioball @keton @thegecko
 /types/nodal/                                           @charrondev
 /types/node/                                            @Microsoft @jkomyno @r3nya @btoueg @touffy @mohsen1 @galkin @eps1lon @WilcoBakker @chyzwar @trivikr @yoursunny @qwelias @ExE-Boss @peterblazejewicz @addaleax @victorperin @NodeJS @LinusU @wafuwafu13 @mcollina @Semigradsky @Renegade334 @anonrig
-/types/node/v18/                                        @Microsoft @jkomyno @r3nya @btoueg @touffy @mohsen1 @galkin @eps1lon @SimonSchick @WilcoBakker @chyzwar @trivikr @yoursunny @qwelias @ExE-Boss @peterblazejewicz @addaleax @victorperin @NodeJS @LinusU @wafuwafu13 @mcollina @Semigradsky
 /types/node/v20/                                        @Microsoft @jkomyno @r3nya @btoueg @touffy @mohsen1 @galkin @eps1lon @WilcoBakker @chyzwar @trivikr @yoursunny @qwelias @ExE-Boss @peterblazejewicz @addaleax @victorperin @NodeJS @LinusU @wafuwafu13 @mcollina @Semigradsky
 /types/node/v22/                                        @Microsoft @jkomyno @r3nya @btoueg @touffy @mohsen1 @galkin @eps1lon @WilcoBakker @chyzwar @trivikr @yoursunny @qwelias @ExE-Boss @peterblazejewicz @addaleax @victorperin @NodeJS @LinusU @wafuwafu13 @mcollina @Semigradsky @Renegade334
 /types/node-7z/                                         @erkie @colin969
@@ -5256,7 +5251,7 @@
 /types/nodegit/                                         @dolanmiu @tniessen @pvigier @IGI-111 @DaGaMs @julien-c @jmurzy @nikwen
 /types/nodejs-license-file/                             @trodi
 /types/nodemailer/                                      @rogierschouten @dex4er @bioball
-/types/nodemailer/v3/                                   @rogierschouten
+/types/nodemailer/v6/                                   @rogierschouten @dex4er @bioball
 /types/nodemailer-direct-transport/                     @rogierschouten
 /types/nodemailer-express-handlebars/                   @th3rius
 /types/nodemailer-html-to-text/                         @fagundes
@@ -5285,6 +5280,7 @@
 /types/noteflight-client/                               @nickslick03
 /types/notiad-sdk/                                      @ykavras
 /types/notie/                                           @mateusdemboski @MysteryBlokHed
+/types/notifme-sdk/                                     @everurstruly
 /types/notify/                                          @hellochar
 /types/notifyjs/                                        @soundTricker @NateScarlet @eikendev
 /types/notifyjs-browser/                                @bahman616
@@ -5324,6 +5320,7 @@
 /types/nuclear-js/                                      @patlillis
 /types/nuclear-js-react-addons-chefsplate/              @patlillis
 /types/num2fraction/                                    @sergey12313
+/types/number-abbreviate/                               @altie122
 /types/number-is-nan/                                   @mhegazy @peterblazejewicz
 /types/number-to-words/                                 @frederickfogerty
 /types/numeral/                                         @vbortone @klujanrosas @KarlosQ @peterblazejewicz
@@ -5448,7 +5445,7 @@
 /types/optimist/                                        @soywiz @chbrown
 /types/optimize-css-assets-webpack-plugin/              @odnamrataizem @skovy
 /types/oracle__oraclejet/                               @nolakara @jingxwu
-/types/oracledb/                                        @connorjayfitzgerald @dannyb648 @jacobwheale @hjamil-24 @sharadraju
+/types/oracledb/                                        @connorjayfitzgerald @dannyb648 @jacobwheale @sudarshan12s @sharadraju
 /types/oracledb/v3/                                     @Bigous @connorjayfitzgerald
 /types/orchestrator/                                    @tkQubo @TeamworkGuy2
 /types/orientjs/                                        @saeedtabrizi @aleksey-rezvov
@@ -5508,8 +5505,6 @@
 /types/parity-pmr/                                      @leovujanic
 /types/parity-poe/                                      @leovujanic
 /types/parquetjs/                                       @jon-fearer
-/types/parse/                                           @ullisenmedia @dpoetzsch @jaeggerr @flavionegrao @wesleygrimes @owsas @agoldis @AlexandreHetu @dplewis @yomybaby @pocketcolin @rdhelms @jlnquere @tybi @jeffgukang @buitanloc @JeromeDeLeon @kentrh @swittk
-/types/parse/v1/                                        @dpoetzsch @jaeggerr @flavionegrao @wesleygrimes @owsas
 /types/parse-author/                                    @remcohaszing
 /types/parse-cache-control/                             @peterblazejewicz
 /types/parse-color/                                     @ajcrites
@@ -5869,7 +5864,7 @@
 /types/prettyjson/                                      @benzid-wael
 /types/preval.macro/                                    @huan086
 /types/preview-email/                                   @peterblazejewicz
-/types/primer__octicons/                                @xiBread
+/types/primer__octicons/                                @olivermrose
 /types/primus/                                          @tellnes @alaazorkane
 /types/printer/                                         @chrispanag
 /types/priorityqueuejs/                                 @geoffreak
@@ -6023,7 +6018,7 @@
 /types/radix64/                                         @huan086
 /types/raf/                                             @BenLorantfy
 /types/raf-schd/                                        @adambrgmn
-/types/rails__actioncable/                              @martin-badin
+/types/rails__actioncable/                              @martin-badin @shunichi
 /types/rails__activestorage/                            @imustafin @cbothner
 /types/rails__request.js/                               @alexandergitter
 /types/rails__ujs/                                      @fsubal @abcang
@@ -6072,7 +6067,6 @@
 /types/rbush/v3/                                        @danvk @cmslewis
 /types/rc/                                              @DanielRosenwasser @BendingBender @kusyka911 @pulsovi
 /types/rc-easyui/                                       @maspinguin
-/types/rc-switch/                                       @karol-majewski @matteofrana
 /types/rcloader/                                        @panuhorsmalahti
 /types/rclone.js/                                       @atifcppprogrammer @sntran
 /types/rdf-data-model/                                  @rubensworks
@@ -6114,7 +6108,6 @@
 /types/re-template-tag/                                 @bendingbender
 /types/reach__router/                                   @xMokAx @awwit @wroughtec @chilledoj @Eyas
 /types/react/                                           @johnnyreilly @bbenezech @pzavolinsky @ericanderson @DovydasNavickas @theruther4d @guilhermehubner @ferdaber @jrakotoharisoa @pascaloliv @hotell @franklixuefei @Jessidhia @saranshkataria @lukyth @eps1lon @zieka @dancerphil @dimitropoulos @disjukr @vhfmag @priyanshurav @Semigradsky @mattpocock
-/types/react/ts5.0/v18/                                 @johnnyreilly @bbenezech @pzavolinsky @ericanderson @DovydasNavickas @theruther4d @guilhermehubner @ferdaber @jrakotoharisoa @pascaloliv @hotell @franklixuefei @Jessidhia @saranshkataria @lukyth @eps1lon @zieka @dancerphil @dimitropoulos @disjukr @vhfmag @priyanshurav @Semigradsky @mattpocock
 /types/react/v15/                                       @johnnyreilly @bbenezech @pzavolinsky @ericanderson @DovydasNavickas @onigoetz @zieka
 /types/react/v16/                                       @johnnyreilly @bbenezech @pzavolinsky @ericanderson @DovydasNavickas @theruther4d @guilhermehubner @ferdaber @jrakotoharisoa @pascaloliv @hotell @franklixuefei @Jessidhia @saranshkataria @lukyth @eps1lon @zieka @dancerphil @dimitropoulos @disjukr @vhfmag @hellatan @priyanshurav
 /types/react/v17/                                       @johnnyreilly @bbenezech @pzavolinsky @ericanderson @DovydasNavickas @theruther4d @guilhermehubner @ferdaber @jrakotoharisoa @pascaloliv @hotell @franklixuefei @Jessidhia @saranshkataria @lukyth @eps1lon @zieka @dancerphil @dimitropoulos @disjukr @vhfmag @hellatan @priyanshurav @konsalex
@@ -6204,7 +6197,6 @@
 /types/react-data-grid/                                 @SupernaviX @KieranPeat @martinnov92 @baso53
 /types/react-data-grid/v1/                              @SupernaviX
 /types/react-data-grid/v2/                              @SupernaviX @KieranPeat @martinnov92 @Ragzzy-R
-/types/react-datagrid/                                  @stephenjelfs
 /types/react-date-range/                                @Junbong @Curzy @DemetriouJohn
 /types/react-date-range/v0/                             @Junbong
 /types/react-dates/                                     @ArturAmpilogov @NathanNZ @cgriebel @jsonunger
@@ -6221,7 +6213,7 @@
 /types/react-dom/v17/                                   @MartynasZilinskas @theruther4d @Jessidhia @eps1lon
 /types/react-dom/v18/                                   @MartynasZilinskas @theruther4d @Jessidhia @eps1lon
 /types/react-dom-factories/                             @jgoz
-/types/react-draft-wysiwyg/                             @imechZhangLY @brunoMaurice @ldanet @MunifTanjim @n-zeplo
+/types/react-draft-wysiwyg/                             @imechZhangLY @brunoMaurice @ldanet @n-zeplo
 /types/react-dragtastic/                                @nscarcella
 /types/react-dragula/                                   @AdrianMrn
 /types/react-dynamic-number/                            @eugrdn
@@ -6293,7 +6285,6 @@
 /types/react-image-gallery/                             @adamwpc @WToa
 /types/react-image-magnifiers/                          @rafw87
 /types/react-image-magnify/                             @sumitparakh
-/types/react-imageloader/                               @stephenjelfs
 /types/react-imgix/                                     @sherwinski @luqven @frederickfogerty @atlawrie
 /types/react-imgpro/                                    @echoulen
 /types/react-immutable-proptypes/                       @Joris-van-der-Wel
@@ -6416,6 +6407,7 @@
 /types/react-native-huawei-protected-apps/              @christianchown
 /types/react-native-i18n/                               @VincentLanglet
 /types/react-native-image-gallery/                      @zhirzh
+/types/react-native-immersive/                          @CheFu-code
 /types/react-native-indicators/                         @ifiokjr
 /types/react-native-joi/                                @CharlesStrong-GeoH
 /types/react-native-keep-awake/                         @huhuanming
@@ -6433,7 +6425,6 @@
 /types/react-native-modalbox/                           @iRoachie
 /types/react-native-modals/                             @PaitoAnderson @jbcrestot
 /types/react-native-modern-datepicker/                  @Ankan002
-/types/react-native-multi-slider/                       @Slessi
 /types/react-native-navbar/                             @ryokik
 /types/react-native-onboarding-swiper/                  @zhirzh @yek-plus
 /types/react-native-orientation/                        @MoLow
@@ -6560,7 +6551,7 @@
 /types/react-router-redux/v4/                           @isman-usoh @noah79 @LKay @DovydasNavickas
 /types/react-router-tabs/                               @joakimunge
 /types/react-router-transition/                         @TheDSCPL
-/types/react-rte/                                       @jclyons52 @MunifTanjim
+/types/react-rte/                                       @jclyons52
 /types/react-s-alert/                                   @mitsuruog
 /types/react-scramble/                                  @fes300
 /types/react-scroll/                                    @sudoplz @GiedriusGrabauskas
@@ -6569,7 +6560,7 @@
 /types/react-scroll-sync/                               @cornedor
 /types/react-scroll-to-bottom/                          @zS1L3NT
 /types/react-scrollable-anchor/                         @AntoineDoubovetzky
-/types/react-scrollbar/                                 @stephenjelfs @HugoCapocci
+/types/react-scrollbar/                                 @HugoCapocci
 /types/react-scrollspy/                                 @ZhangYiJiang
 /types/react-select-country-list/                       @kieran6roberts
 /types/react-shadow-dom-retarget-events/                @remcohaszing
@@ -6635,7 +6626,6 @@
 /types/react-text-mask/                                 @guilhermehubner @cavarzan @needpower
 /types/react-text-truncate/                             @adriantoine
 /types/react-textfit/                                   @yongtheskill
-/types/react-timeago/                                   @koss-lebedev @mcmar
 /types/react-timeout/                                   @kerwynrg
 /types/react-toastr/                                    @shssoichiro @DanRegazzi
 /types/react-toggle/                                    @LKay
@@ -6667,8 +6657,6 @@
 /types/react-weui/                                      @tairan
 /types/react-wheelpicker/                               @tyirenkyi
 /types/react-widgets-moment/                            @dawnmist
-/types/react-window/                                    @martynaskadisa @heyimalex @jgoz
-/types/react-window-infinite-loader/                    @Nibblesh @fnknzzz
 /types/react-window-scroller/                           @ANetuk
 /types/react-window-size/                               @jakejrichards
 /types/react-with-styles/                               @mohsen1 @brieb @lencioni
@@ -6936,6 +6924,7 @@
 /types/rosie/                                           @abner @subvertallchris @abukurov @adam187
 /types/roslib/                                          @Pro @alumag
 /types/round/                                           @ChocolateLoverRaj
+/types/round-tofixed/                                   @DesselBane
 /types/route-cache/                                     @yutak23
 /types/route-parser/                                    @ianks @bobbuehler
 /types/routie/                                          @Adilson
@@ -7092,13 +7081,12 @@
 /types/scryptsy/                                        @micksatana
 /types/scss-parser/                                     @wesselvanderlinden
 /types/sd-notify/                                       @Cheprer @roryrjb
-/types/sdp-transform/                                   @loc @muenchow
+/types/sdp-transform/                                   @loc @muenchow @ibc
 /types/seamless/                                        @danmana
 /types/seamless-immutable/                              @alex3165 @xsburg @geirsagberg @RMHonor @pheromonez
 /types/search-index/                                    @TravisYeah @thehenrytsai
 /types/searchjs/                                        @iammerus
 /types/season/                                          @dex4er
-/types/secp256k1/                                       @anler
 /types/secret-blob/                                     @BendingBender
 /types/secret-box/                                      @BendingBender
 /types/secretbox-encoding/                              @BendingBender
@@ -7158,12 +7146,12 @@
 /types/semver/                                          @Bartvds @BendingBender @LucianBuzzo @ajafff @ExE-Boss @peterblazejewicz
 /types/semver/v6/                                       @Bartvds @BendingBender @LucianBuzzo @ajafff @ExE-Boss
 /types/semver-compare/                                  @vincekovacs @LinusU
-/types/semver-compare-multi/                            @ravenclaw900
 /types/semver-sort/                                     @LogvinovLeon @qcz
 /types/semver-stable/                                   @JamieMagee
 /types/semver-utils/                                    @JamieMagee
 /types/sencha_touch/                                    @brian428
 /types/send/                                            @MikeJerred @peterblazejewicz @bjohansebas
+/types/send/v0/                                         @MikeJerred @peterblazejewicz @bjohansebas
 /types/sendcloud/                                       @bangbang93
 /types/sendmail/                                        @saostad
 /types/sendsay-api/                                     @T0R0NT0T0KY0
@@ -7177,6 +7165,7 @@
 /types/serve-handler/                                   @simonhaenisch
 /types/serve-index/                                     @tkrotoff
 /types/serve-static/                                    @urossmolnik @LinusU @devanshj @bjohansebas
+/types/serve-static/v1/                                 @urossmolnik @LinusU @devanshj @bjohansebas
 /types/server/                                          @sant123 @iddan @DazSanchez
 /types/server-destroy/                                  @gyszalai
 /types/server-timing-header/                            @peterblazejewicz
@@ -7466,6 +7455,7 @@
 /types/ssh2-sftp-client/v7/                             @igrayson @ascariandrea @kartik2406 @viamuli @gbhmt @builtbylane @loru88 @hengkx @candyapplecorn @tsop14
 /types/ssh2-streams/                                    @rbuckton @bragle
 /types/sshpk/                                           @mabels @lavalleeale @coalzombik
+/types/ssi-modal/                                       @dragon-fish
 /types/ssri/                                            @huan086 @ExE-Boss @peterblazejewicz
 /types/stack-mapper/                                    @rogierschouten
 /types/stack-trace/                                     @exceptionless
@@ -7491,14 +7481,13 @@
 /types/stdin/                                           @g-rath
 /types/stdout-stream/                                   @yoursunny
 /types/steam/                                           @kant2002
-/types/steam-client/                                    @Slessi
 /types/steam-login/                                     @Nicell
 /types/steam-totp/                                      @phenomax @dsyncerek
 /types/steam-tradeoffer-manager/                        @kldzj @kjsmita6
 /types/steam-user/                                      @joshuajeschek
 /types/steamapi/                                        @joshuajeschek @claabs
 /types/steamcommunity/                                  @SenTisso
-/types/steamid/                                         @Slessi @joshuajeschek
+/types/steamid/                                         @joshuajeschek
 /types/steed/                                           @Paul-Isache
 /types/steelseries/                                     @ricky-rebo
 /types/stegcloak/                                       @ktjd123
@@ -7713,7 +7702,7 @@
 /types/tabulator-tables/                                @jojoshua @mike-lischke
 /types/tadashi__koa-jwt-authz/                          @Shqrp
 /types/tail/                                            @spacejack @devindavies
-/types/tampermonkey/                                    @silverwzw @nikolay-borzov @taozhiyu @double-beep
+/types/tampermonkey/                                    @silverwzw @nikolay-borzov @taozhiyu @double-beep @ziuchen
 /types/tapable/                                         @e-cloud @johnnyreilly
 /types/tapable/v0/                                      @e-cloud
 /types/tapable/v1/                                      @e-cloud @johnnyreilly
@@ -7909,6 +7898,7 @@
 /types/traverson/                                       @marcinporebski @jelovac
 /types/trayballoon/                                     @korve
 /types/treeify/                                         @mike-north
+/types/treescape/                                       @Shan0102
 /types/treeverse/                                       @HugoMendes98
 /types/trellopowerup/                                   @tatablack
 /types/tress/                                           @sindilevich
@@ -7929,6 +7919,7 @@
 /types/try-catch/                                       @coderaiser
 /types/try-to-catch/                                    @coderaiser
 /types/tryer/                                           @bengry
+/types/tryghost__admin-api/                             @josejj10
 /types/tryghost__content-api/                           @knguyen0125 @antonve @maveric1977
 /types/ts-nameof/                                       @dsherret
 /types/tspromise/                                       @soywiz
@@ -8108,15 +8099,11 @@
 /types/uswds__uswds/                                    @lunchbreakdev @aduth
 /types/utf-8-validate/                                  @OpportunityLiu
 /types/utf8/                                            @peterblazejewicz
-/types/utif/                                            @smajl @nkprince007 @massic80
+/types/utif/                                            @smajl @massic80
 /types/util-deprecate/                                  @BendingBender
 /types/util.promisify/                                  @adamvoss @dex4er @ExE-Boss @ljharb
 /types/utils-merge/                                     @chrootsu
 /types/utm/                                             @civilizeddev @JonasTriki
-/types/uuid/                                            @iamolivinius @felipeochoa @cjbarth @LinusU @ctavan
-/types/uuid/v2/                                         @iamolivinius
-/types/uuid/v3/                                         @iamolivinius @felipeochoa @cjbarth @LinusU
-/types/uuid/v7/                                         @iamolivinius @felipeochoa @cjbarth @LinusU @ctavan
 /types/uuid-1345/                                       @mugeso
 /types/uuid-browser/                                    @forivall
 /types/uuid-encoder/                                    @mvhenten
@@ -8142,7 +8129,7 @@
 /types/validate-npm-package-license/                    @carboneater
 /types/validate-npm-package-name/                       @ffflorian @peterblazejewicz
 /types/validate-objectid/                               @ChocolateLoverRaj
-/types/validator/                                       @tgfjt @chrootsu @IOAyman @louy @deptno @builtinnya @qqilihq @keatz55 @MunifTanjim @vlapo @peterblazejewicz @Mattewn99 @dcfreire @WikiRik
+/types/validator/                                       @tgfjt @chrootsu @IOAyman @louy @deptno @builtinnya @qqilihq @keatz55 @vlapo @peterblazejewicz @Mattewn99 @dcfreire @WikiRik
 /types/validatorjs/                                     @LKay @danmana @MatiasOlivera
 /types/valvelet/                                        @bendingbender
 /types/vanilla-masker/                                  @BenLorantfy
@@ -8219,6 +8206,7 @@
 /types/vosk/                                            @ifeanyiecheruo
 /types/voucher-code-generator/                          @JWebCoder
 /types/voximplant-websdk/                               @aylarov
+/types/vpk/                                             @v0eak
 /types/vscode/                                          @microsoft
 /types/vscode-notebook-renderer/                        @connor4312 @mjbvz
 /types/vscode-webview/                                  @mjbvz
@@ -8244,8 +8232,7 @@
 /types/vue-tel-input/                                   @suryadana
 /types/vue-template-es2015-compiler/                    @iam-medvedev
 /types/vue-the-mask/                                    @domschmidt
-/types/vue-writer/                                      @BekYahia
-/types/vue2-datepicker/                                 @ChristianStornowski
+/types/vue2-datepicker/                                 @ChrisStornowski
 /types/vue2-editor/                                     @suryadana
 /types/vue2-hammer/                                     @ptandler
 /types/vue3-carousel-3d/                                @tevem1207
@@ -8305,7 +8292,7 @@
 /types/webcl/                                           @NCARalph
 /types/webcomponents.js/                                @adidahiya
 /types/webcrypto/                                       @iislucas
-/types/webextension-polyfill/                           @Lusito @mnoorenberghe
+/types/webextension-polyfill/                           @Lusito @mnoorenberghe @josh-berry
 /types/webfontloader/                                   @sectsect
 /types/webgl-ext/                                       @zenmumbler
 /types/webgl2/                                          @nkemnitz @karhu
@@ -8348,7 +8335,7 @@
 /types/webpack-fail-plugin/                             @deevus
 /types/webpack-files-archive-plugin/                    @yusufades
 /types/webpack-hot-client/                              @ZSkycat @barm
-/types/webpack-hot-middleware/                          @bumbleblym @icylace @chrisabrams @iliyaZelenko @saboya
+/types/webpack-hot-middleware/                          @bumbleblym @icylace @chrisabrams @saboya
 /types/webpack-livereload-plugin/                       @peterblazejewicz
 /types/webpack-merge-and-include-globally/              @peterblazejewicz
 /types/webpack-node-externals/                          @mtraynham @MrSpoocy @peterblazejewicz
@@ -8374,6 +8361,7 @@
 /types/websocket-async/                                 @bigbeno37
 /types/websql/                                          @TeamworkGuy2
 /types/webtorrent/                                      @niieani @tlaziuk @gjuchault @cheeseandcereal
+/types/webvis/                                          @threedy-io @instant3Dhub @tsturm @dbthreed @ErikSpiegelberg @TimLamThreedy
 /types/webvr-api/                                       @efokschaner
 /types/webvtt-parser/                                   @dodomorandi
 /types/webxr/                                           @robrohan @RaananW @capnmidnight @sorskoot
@@ -8419,7 +8407,6 @@
 /types/winchan/                                         @andersk
 /types/window-or-global/                                @vvakame @JasonHK @ExE-Boss
 /types/window-size/                                     @juergenie
-/types/windows-1251/                                    @RomanGolovanov
 /types/windows-elevate/                                 @Goldsmith42
 /types/windows-mutex/                                   @bpasero
 /types/windows-script-host/                             @zspitz
@@ -8451,7 +8438,7 @@
 /types/wordfilter/                                      @mlc
 /types/wordpress-hash-node/                             @glennreyes
 /types/wordpress__admin/                                @oblakstudio
-/types/wordpress__block-editor/                         @dsifford @sirreal @dmsnell
+/types/wordpress__block-editor/                         @dsifford @sirreal @dmsnell @joshualip-plaudit
 /types/wordpress__block-library/                        @dsifford
 /types/wordpress__block-serialization-spec-parser/      @dsifford
 /types/wordpress__blocks/                               @dsifford @sirreal @dmsnell @tomasztunik @sunyatasattva @bastolen

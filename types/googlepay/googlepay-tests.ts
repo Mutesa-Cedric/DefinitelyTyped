@@ -26,6 +26,12 @@ const allowedPaymentMethods = new Array<google.payments.api.PaymentMethodSpecifi
     },
 });
 
+const checkoutOptions = new Array<google.payments.api.CheckoutOption>(
+    "DEFAULT",
+    "COMPLETE_IMMEDIATE_PURCHASE",
+    "CONTINUE_TO_REVIEW",
+);
+
 // @ts-expect-error
 allowedPaymentMethods[0].tokenizationSpecification = {
     type: "DIRECT",
@@ -154,6 +160,9 @@ function addGooglePayButton() {
     buttonOptions.buttonLocale = "en";
     buttonOptions.buttonLocale = "qw";
     buttonOptions.buttonLocale = "zh";
+
+    buttonOptions.buttonBorderType = "default_border";
+    buttonOptions.buttonBorderType = "no_border";
 
     const client = getGooglePaymentsClient();
     const button = client.createButton(buttonOptions);

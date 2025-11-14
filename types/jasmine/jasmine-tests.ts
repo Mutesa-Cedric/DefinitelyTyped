@@ -14,6 +14,7 @@ import JasmineClass from "jasmine";
     jasmineClass.addMatchingHelperFiles(["dir/**/*.js"]);
 
     jasmineClass.env.configure({
+        forbidDuplicateNames: true,
         random: true,
         failSpecWithNoExpectations: true,
         hideDisabled: true,
@@ -93,6 +94,11 @@ describe("Included matchers:", () => {
             const value: number | string = null as any;
 
             expect(value).toBe(12);
+        });
+
+        it("should not consider strings as array-like", () => {
+            // @ts-expect-error
+            expect("abc").toEqual(["a", "b", "c"]);
         });
     });
 

@@ -232,6 +232,10 @@
             "libraryName": "argon2",
             "asOfVersion": "0.15.0"
         },
+        "array-equal": {
+            "libraryName": "array-equal",
+            "asOfVersion": "2.0.0"
+        },
         "array-move": {
             "libraryName": "array-move",
             "asOfVersion": "2.0.0"
@@ -351,6 +355,10 @@
         "azure-mobile-apps": {
             "libraryName": "azure-mobile-apps",
             "asOfVersion": "3.0.0"
+        },
+        "babel-plugin-tester": {
+            "libraryName": "babel-plugin-tester",
+            "asOfVersion": "11.0.0"
         },
         "babel__parser": {
             "libraryName": "@babel/parser",
@@ -560,6 +568,10 @@
             "libraryName": "bs58",
             "asOfVersion": "5.0.0"
         },
+        "bs58check": {
+            "libraryName": "bs58check",
+            "asOfVersion": "3.0.1"
+        },
         "bson": {
             "libraryName": "bson",
             "asOfVersion": "4.2.0"
@@ -656,6 +668,10 @@
             "libraryName": "@carbon/icons-react",
             "asOfVersion": "11.29.0"
         },
+        "carbon__pictograms-react": {
+            "libraryName": "@carbon/pictograms-react",
+            "asOfVersion": "11.89.0"
+        },
         "card-validator": {
             "libraryName": "card-validator",
             "asOfVersion": "7.0.1"
@@ -703,6 +719,10 @@
         "chalk": {
             "libraryName": "chalk",
             "asOfVersion": "2.2.0"
+        },
+        "chalk-pipe": {
+            "libraryName": "chalk-pipe",
+            "asOfVersion": "5.1.1"
         },
         "change-case": {
             "libraryName": "change-case",
@@ -1432,6 +1452,14 @@
         "cypress-recurse": {
             "libraryName": "cypress-recurse",
             "asOfVersion": "1.9.0"
+        },
+        "cytoscape": {
+            "libraryName": "cytoscape",
+            "asOfVersion": "3.31.0"
+        },
+        "cytoscape-popper": {
+            "libraryName": "cytoscape-popper",
+            "asOfVersion": "4.0.0"
         },
         "dargs": {
             "libraryName": "dargs",
@@ -2877,6 +2905,10 @@
             "libraryName": "html-entities",
             "asOfVersion": "1.3.2"
         },
+        "html-minifier-next": {
+            "libraryName": "html-minifier-next",
+            "asOfVersion": "4.1.0"
+        },
         "html-tag-names": {
             "libraryName": "html-tag-names",
             "asOfVersion": "2.0.0"
@@ -3005,6 +3037,10 @@
             "libraryName": "images",
             "asOfVersion": "3.2.0"
         },
+        "imapflow": {
+            "libraryName": "imapflow",
+            "asOfVersion": "1.0.189"
+        },
         "img-diff-js": {
             "libraryName": "img-diff-js",
             "asOfVersion": "0.5.0"
@@ -3124,6 +3160,10 @@
         "ip-regex": {
             "libraryName": "ip-regex",
             "asOfVersion": "4.1.0"
+        },
+        "ip-subnet-calculator": {
+            "libraryName": "ip-subnet-calculator",
+            "asOfVersion": "2.0.0"
         },
         "ipify": {
             "libraryName": "ipify",
@@ -3797,9 +3837,17 @@
             "libraryName": "levenshtein-edit-distance",
             "asOfVersion": "3.0.0"
         },
+        "libarchive.js": {
+            "libraryName": "libarchive.js",
+            "asOfVersion": "2.0.1"
+        },
         "libra-core": {
             "libraryName": "libra-core",
             "asOfVersion": "1.0.5"
+        },
+        "libxmljs": {
+            "libraryName": "libxmljs",
+            "asOfVersion": "1.0.1"
         },
         "lifeomic__axios-fetch": {
             "libraryName": "@lifeomic/axios-fetch",
@@ -3844,6 +3892,10 @@
         "linqsharp": {
             "libraryName": "linqsharp",
             "asOfVersion": "1.0.0"
+        },
+        "lint-staged": {
+            "libraryName": "lint-staged",
+            "asOfVersion": "14.0.0"
         },
         "load-json-file": {
             "libraryName": "load-json-file",
@@ -5097,6 +5149,10 @@
             "libraryName": "park-miller",
             "asOfVersion": "1.1.0"
         },
+        "parse": {
+            "libraryName": "parse",
+            "asOfVersion": "6.1.0"
+        },
         "parse-columns": {
             "libraryName": "parse-columns",
             "asOfVersion": "2.0.0"
@@ -5734,6 +5790,10 @@
         "rc-steps": {
             "libraryName": "rc-steps",
             "asOfVersion": "4.0.0"
+        },
+        "rc-switch": {
+            "libraryName": "rc-switch",
+            "asOfVersion": "2.0.0"
         },
         "rc-time-picker": {
             "libraryName": "rc-time-picker",
@@ -6403,6 +6463,10 @@
             "libraryName": "react-time-picker",
             "asOfVersion": "6.0.0"
         },
+        "react-timeago": {
+            "libraryName": "react-timeago",
+            "asOfVersion": "8.0.0"
+        },
         "react-toast-notifications": {
             "libraryName": "react-toast-notifications",
             "asOfVersion": "2.4.1"
@@ -6438,6 +6502,14 @@
         "react-widgets": {
             "libraryName": "react-widgets",
             "asOfVersion": "5.0.0"
+        },
+        "react-window": {
+            "libraryName": "react-window",
+            "asOfVersion": "2.0.0"
+        },
+        "react-window-infinite-loader": {
+            "libraryName": "react-window-infinite-loader",
+            "asOfVersion": "2.0.0"
         },
         "react-youtube": {
             "libraryName": "react-youtube",
@@ -7807,6 +7879,10 @@
             "libraryName": "username",
             "asOfVersion": "5.0.0"
         },
+        "uuid": {
+            "libraryName": "uuid",
+            "asOfVersion": "11.0.0"
+        },
         "uuid-apikey": {
             "libraryName": "uuid-apikey",
             "asOfVersion": "1.5.0"
@@ -8034,6 +8110,10 @@
         "wikidata-sdk": {
             "libraryName": "wikidata-sdk",
             "asOfVersion": "6.1.0"
+        },
+        "windows-1251": {
+            "libraryName": "windows-1251",
+            "asOfVersion": "3.0.4"
         },
         "windows-foreground-love": {
             "libraryName": "windows-foreground-love",

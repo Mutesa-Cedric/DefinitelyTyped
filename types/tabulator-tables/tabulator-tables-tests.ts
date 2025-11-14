@@ -7,6 +7,7 @@ import {
     ColumnDefinition,
     ColumnDefinitionSorterParams,
     DataTreeModule,
+    FilterModule,
     GroupComponent,
     InputParams,
     JSONRecord,
@@ -399,6 +400,10 @@ colDef.headerFilterFunc = (headerValue, rowValue, rowData, filterParams) => {
     return rowData.name === filterParams.name && rowValue < headerValue; // must return a boolean, true if it passes the filter.
 };
 
+colDef.headerFilterFuncParams = {
+    myParam: "my param",
+};
+
 // Calculation
 colDef.bottomCalc = (values, data, calcParams) => {
     return {};
@@ -433,6 +438,23 @@ colDef.tooltip = (event: MouseEvent, cell: CellComponent, onRendered: (callback:
         console.log("rendering occurred");
     });
     return cell.getValue();
+};
+
+// Additional tests for tooltip signature / return values
+// boolean values
+colDef.tooltip = false;
+colDef.tooltip = true;
+
+// function returning a string
+colDef.tooltip = (e: MouseEvent, cell: CellComponent) => {
+    return "Tooltip";
+};
+
+// function returning an HTMLElement
+colDef.tooltip = (e: MouseEvent, cell: CellComponent) => {
+    const el = document.createElement("div");
+    el.innerText = "Tooltip";
+    return el;
 };
 
 // Cell Component
@@ -1838,3 +1860,17 @@ table = new Tabulator("#test-selectableRowsCheck", {
         { title: "Name", field: "name", headerMenu: headerMenuFunc },
     ],
 });
+
+// Testing FilterModule
+// getFilters can take a boolean or no arguments (it defaults to false)
+table.setFilter("name", "<=", 3);
+table.getFilters();
+table.getFilters(true);
+table.getFilters(false);
+// $ExpectType HeaderFilterFunc
+FilterModule.filters[0];
+
+// Testing SortModule
+// setSort can take a string or an array of Sorters
+table.setSort("title", "asc");
+table.setSort([{ column: "title", dir: "asc" }]);
